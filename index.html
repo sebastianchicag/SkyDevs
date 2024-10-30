@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icons/3.5.0/css/flag-icons.min.css">
+    <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/252/252035.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-icons/13.15.0/simpleicons.svg">
+    <title>Inicio - Bienvenido</title>
+</head>
+<body>
+    <div class="loading-state" id="preloader">
+        <div class="loading"></div>
+    </div>
+    <div class="top-bar bg-dark">
+        <div class="container d-flex justify-content-between align-items-center p-2">
+            <div class="ml-1">
+                <img src="https://cdn-icons-png.flaticon.com/512/555/555617.png" alt="col" width="30" class="icon-topbar" />
+                <span class="ml-2 text-white">¡Colombia!</span>
+            </div>
+            <div class="mr-3">
+                <img src="https://cdn-icons-png.flaticon.com/512/206/206626.png" alt="es" width="30" class="mr-2 icon-topbar" onclick="change('en')"/>
+                <img src="https://cdn-icons-png.flaticon.com/512/555/555635.png" alt="es" width="30" class="icon-topbar" onclick="change('es')"/>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#"><i class="fa-solid fa-cloud mr-2"></i>SkyDevs</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars menu"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link lead" href="#home" id="homeText" onclick="setActive(this)">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link lead" href="#servicesTextTwo" id="servicesText" onclick="setActive(this)">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link lead" href="#portfolio" id="PortafolioText" onclick="setActive(this)">Portafolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link lead" href="#ContactForm" id="contactText" onclick="setActive(this)">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section id="home">
+        <div class="jumbotron jumbotron-fluid d-flex align-items-center justify-content-center mt-5" id="call-to-action">
+            <div class="container text-center">
+                <h1 class="display-4 text-center text-uppercase font-weight-bold" id="headerText">Sobre mi</h1>
+                <p id="descriptionText" class="lead text-justify mt-4">
+                    Soy un desarrollador de software full stack apasionado, con un enfoque particular en el front end. Mi objetivo es siempre ofrecer soluciones instantáneas y efectivas que maximicen el potencial tecnológico de las marcas con las
+                    que trabajo. A lo largo de mi carrera, he adquirido experiencia en una variedad de tecnologías y herramientas que me permiten crear interfaces intuitivas y atractivas, optimizando la experiencia del usuario. Estoy comprometido
+                    con la innovación constante y la adaptación a las tendencias del mercado, asegurando que cada proyecto no solo cumpla con los estándares actuales, sino que también anticipe las necesidades futuras. Mi pasión por el desarrollo me
+                    impulsa a colaborar estrechamente con mis clientes, transformando sus visiones en realidades digitales impactantes que impulsan el crecimiento y la satisfacción del usuario.
+                </p>
+            </div>
+        </div>
+    </section>
+    <div class="container mt-5 mb-4">
+        <div class="row text-center mb-4">
+            <div class="col-md-10 text-center mx-auto">
+                <h1 class="display-4 text-center text-uppercase font-weight-bold" id="servicesTextTwo">Servicios</h1>
+                <p class="lead" id="infoservices">Estamos aquí para ayudarte a hacer realidad tu proyecto! Si tienes preguntas o quieres conocer más sobre nuestro proceso, no dudes en enviarnos un e-mail. ¡Nos encantaría hablar contigo sobre:</p>
+            </div>
+        </div>
+        <div class="row text-center mt-4">
+            <div class="col-md-4">
+                <i class="fa-solid fa-palette fa-3x"></i>
+                <h3 class="mt-2" id="webdesignText">Diseño Web</h3>
+                <p class="text-center mt-2 lead" id="webServices">Sitios web, Gestores de Contenido, Tiendas en linea, Facebook Apps, FrontEnd y Backend.</p>
+            </div>
+            <div class="col-md-4">
+                <i class="fa-solid fa-code fa-3x"></i>
+                <h3 class="mt-2" id="devText">Desarrollo Web</h3>
+                <p class="text-center mt-2 lead" id="devServices">Creamos soluciones web para su empresa: Inventario, Facturación, Planillas, Contabilidad.</p>
+            </div>
+            <div class="col-md-4">
+                <i class="fa-solid fa-basket-shopping fa-3x"></i>
+                <h3 class="mt-2" id="shopText">Ecommerce</h3>
+                <p class="text-center mt-2 lead" id="shopServices">Tiendas en línea con integración de pagos Stripe y PayPal, ideales para comercio electrónico.</p>
+            </div>
+        </div>
+        <div class="row text-center mt-5 mb-5">
+            <div class="col-md-4">
+                <i class="fa-solid fa-brush fa-3x"></i>
+                <h3 class="mt-2" id="graphicText">Diseño Gráfico</h3>
+                <p class="text-center mt-2 lead" id="graphicServices">Diseño Gráfico, Diseño Corporativo, Branding, Diseño ux/ui y <br> Diseño Multimedia.</p>
+            </div>
+            <div class="col-md-4">
+                <i class="fa-solid fa-cash-register fa-3x"></i>
+                <h3 class="mt-2" id="factureText">Facturación</h3>
+                <p class="text-center mt-2 lead" id="factureServices">Crea y gestiona facturas de forma intuitiva, optimizando el flujo de caja y la administración.</p>
+            </div>
+            <div class="col-md-4">
+                <i class="fa-solid fa-cart-flatbed fa-3x"></i>
+                <h3 class="mt-2" id="inventoryText">Inventarios</h3>
+                <p class="text-center mt-2 lead" id="inventoryServices">Gestiona tu inventario de manera eficiente, optimizando el seguimiento de productos y disponibilidad.</p>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid mt-5 mb-5" id="call-to-action">
+        <div class="row">
+            <div class="col-md-12 text-center p-5">
+                <h1 class="display-4 text-center text-uppercase font-weight-bold" id="callTitle">¿Listo para llevar tu proyecto al siguiente nivel?</h1>
+                <p class="lead" id="callText">Convierte tus ideas en soluciones digitales que marcan la diferencia. ¡Hablemos y hagamos realidad tu visión!</p>
+                <div class="btn btn-dark lead p-2" id="callbtn">Contactame <i class="fa-regular fa-envelope ml-2"></i></div>
+            </div>              
+        </div>
+    </div>
+    <div class="container mt-5 mb-5" id="portfolio">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="display-4 text-left text-uppercase font-weight-bold text-center" id="tecText">Tecnologías</h1>
+                <p class="lead text-justify mt-4" id="tectDesc">Tengo 4 años de experiencia en el desarrollo de software, iniciando mi carrera como frontend y aprendiendo diversas tecnologías y frameworks. Mi trayectoria como freelancer y empleado me ha llevado a profundizar en el desarrollo backend, permitiéndome evolucionar hacia un rol de desarrollador full stack. Hoy, domino más de 16 tecnologías y cuento con certificaciones que respaldan mi capacidad para asumir grandes retos. Mi enfoque se centra en crear soluciones integrales, adaptándome a las necesidades tanto del cliente como del mercado.</p>
+                <a href="assets/documents/JuanChica.pdf" class="btn btn-outline-dark p-2 lead" download>Cv Juan Chica<i class="fa-solid fa-download ml-2"></i></a>
+            </div>
+        </div>
+        <div class="row mt-4 mb-3">
+            <div class="col-md-12 d-flex justify-content-between flex-wrap">
+                <i class="fa-brands fa-html5 fa-3x"></i>
+                <i class="fa-brands fa-css3-alt fa-3x"></i>
+                <i class="fa-brands fa-square-js fa-3x"></i>
+                <i class="fa-brands fa-bootstrap fa-3x"></i>
+                <i class="fa-brands fa-angular fa-3x"></i>
+                <i class="fa-brands fa-react fa-3x"></i>
+                <i class="fa-brands fa-php fa-3x"></i>
+                <i class="fa-brands fa-laravel fa-3x"></i>
+                <i class="fa-brands fa-python fa-3x"></i>
+                <i class="fa-brands fa-java fa-3x"></i>
+                <i class="fa-brands fa-square-gitlab fa-3x"></i>
+                <i class="fa-brands fa-github fa-3x"></i>
+            </div>            
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">Dotaciones</h5>
+                            <a target="_blank" href="https://empresas.juanpablomurillo.com/login" class="card-link">Aquí</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">Dormilandia</h5>
+                            <a target="_blank" href="https://colchonesdormilandia.co/" class="card-link">Aquí</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">Abbalab</h5>
+                            <a target="_blank" href="https://www.admin.abbalabsi.com/" class="card-link">Aquí</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>    
+    <div class="container-fluid mt-5 mb-5" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <form class="mt-3">
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <p class="lead" id="Name">Nombres</p>
+                                <input type="text" class="form-control" autocomplete="off">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <p class="lead" id="Lastname">Apellidos</p>
+                                <input type="text" class="form-control" autocomplete="off">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-12">
+                                <p class="lead" id="Email">Correo electrónico</p>
+                                <input type="text" class="form-control" autocomplete="off">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-12">
+                                <p class="lead" id="Message">Mensaje</p>
+                                <textarea name="" id="" cols="30" rows="8" class="form-control"></textarea>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-12">
+                                <button class="btn-block btn btn-dark p-2 lead" id="Send">Enviar</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-6">
+                    <h1 class="display-4 text-center text-uppercase font-weight-bold" id="ContactForm">Contacto</h1>
+                    <p class="lead text-center mt-3 ml-3" id="ContacServ">Conéctate conmigo, enfoque profesional, trabajo en equipo.</p>                    
+                    <ol class="mt-2 ml-5 contact-list">
+                        <li class="lead font-weight-bold" id="PassOne">Levantamiento de Requerimientos</li>
+                        <li class="lead font-weight-bold" id="PasssTwo">Análisis de Requerimientos</li>
+                        <li class="lead font-weight-bold" id="PassThree">Diseño del Software</li>
+                        <li class="lead font-weight-bold" id="PassFour">Desarrollo o Codificación</li>
+                        <li class="lead font-weight-bold" id="PssSix">Pruebas</li>
+                        <li class="lead font-weight-bold" id="PassEight">Implementación o Despliegue</li>
+                        <li class="lead font-weight-bold" id="PassNine">Soporte</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid p-0 mb-0">
+        <div class="row m-0 mb-0">
+            <div class="col-12 p-0">
+                <iframe 
+                    class="d-block maps" 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63636.584675781305!2d-75.72174977418328!3d4.542355894659237!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e38f5ade6653bc1%3A0xc2c6ca4ab95d8808!2sArmenia%2C%20Quind%C3%ADo!5e0!3m2!1ses!2sco!4v1730076027898!5m2!1ses!2sco" 
+                    width="100%" 
+                    height="400" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </div>
+    <footer class="bg-dark text-white m-0 p-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h3 class="head-footer" id="FooterOther">Otros servicios</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="lead" id="OtherOne">Soporte</a></li>
+                        <li><a href="#" class="lead" id="OtherTwo">Desarrollo de aplicaciones móviles</a></li>
+                        <li><a href="#" class="lead" id="OtherThree">Optimización SEO</a></li>
+                        <li><a href="#" class="lead" id="OtherFour">Mantenimiento de sitios web</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h3 class="head-footer" id="Links">Enlaces frecuentes</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="lead" id="LinksOne">Portafolio</a></li>
+                        <li><a href="#" class="lead" id="LinksTwo">Servicios</a></li>
+                        <li><a href="#" class="lead" id="LinksThree">Política de reembolsos</a></li>
+                        <li><a href="#" class="lead" id="LinksFour">Política de privacidad</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h3 class="head-footer" id="More">Más productos</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="lead" id="MoreOne">Sistema de inventario</a></li>
+                        <li><a href="#" class="lead" id="MoreTwo">Sistema de ordenes de trabajo</a></li>
+                        <li><a href="#" class="lead" id="MoreThree">Sistema de gastos e ingresos</a></li>
+                        <li><a href="#" class="lead" id="MoreFour">Catálogo web de productos</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="text-center p-2 bg-copy text-white">
+        <p class="m-0 lead footer-right" id="FooterDown">Todos los derechos reservados &copy; 2024</p>
+    </div>
+    <a href="https://wa.link/48jk5h" target=”_blank” class="whatsapp-btn">
+        <i class="fa-brands fa-whatsapp icon-whatsapp"></i>
+    </a>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"></script>
+    <script src="assets/js/language.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
